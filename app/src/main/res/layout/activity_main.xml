@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.ma.mj.hw7.MainActivity">
+
+    <com.ma.mj.hw7.AddFruit
+        android:id="@+id/adding"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </com.ma.mj.hw7.AddFruit>
+
+    <GridView
+        android:id="@+id/grid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:horizontalSpacing="10dp"
+        android:verticalSpacing="10dp"
+        android:numColumns="2"/>
+
+    <com.ma.mj.hw7.ShowElse
+        android:id="@+id/showing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </com.ma.mj.hw7.ShowElse>
+
+
+</LinearLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp"
+    android:background="#fffb8c"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <AutoCompleteTextView
+        android:id="@+id/userfruit"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:hint="name" />
+
+    <EditText
+        android:id="@+id/userprice"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ems="10"
+        android:hint="price"
+        android:inputType="number" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_weight="1"
+        app:srcCompat="@drawable/abocado" />
+
+    <Button
+        android:id="@+id/next_b"
+        android:layout_width="5dp"
+        android:layout_height="30dp"
+        android:layout_weight="1"
+        android:background="@android:drawable/ic_media_ff" />
+
+    <Button
+        android:id="@+id/add_b"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Add" />
+</LinearLayout>
