@@ -6,11 +6,11 @@
     android:orientation="vertical"
     tools:context="com.ma.mj.hw7.MainActivity">
 
-    <com.ma.mj.hw7.AddFruit
-        android:id="@+id/adding"
+    <com.ma.mj.hw7.ShowElse
+        android:id="@+id/showing"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-    </com.ma.mj.hw7.AddFruit>
+    </com.ma.mj.hw7.ShowElse>
 
     <GridView
         android:id="@+id/grid"
@@ -21,11 +21,11 @@
         android:verticalSpacing="10dp"
         android:numColumns="2"/>
 
-    <com.ma.mj.hw7.ShowElse
-        android:id="@+id/showing"
+    <com.ma.mj.hw7.AddFruit
+        android:id="@+id/adding"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-    </com.ma.mj.hw7.ShowElse>
+    </com.ma.mj.hw7.AddFruit>
 
 
 </LinearLayout>

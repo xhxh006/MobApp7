@@ -7,6 +7,7 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -17,6 +18,7 @@ import java.util.ArrayList;
 public class CustomAdapter extends BaseAdapter{
     Context context;
     ArrayList<Data> dataList = new ArrayList<>();
+    ArrayList<String> cartList = new ArrayList<>();
     TextView t;
     boolean isChecked;
 
@@ -59,8 +61,16 @@ public class CustomAdapter extends BaseAdapter{
         else{
             t.setText(dataList.get(position).name);
         }
+        this.notifyDataSetChanged();
     }
     public void getcheck (boolean ischecked){
         this.isChecked = ischecked;
+    }
+    public void addCart(int position){
+        cartList.add(dataList.get(position).name);
+        Toast.makeText(context.getApplicationContext(),
+                "카트에"+dataList.get(position).name+"이 추가되었습니다",
+                Toast.LENGTH_SHORT).show();
+        this.notifyDataSetChanged();
     }
 }
